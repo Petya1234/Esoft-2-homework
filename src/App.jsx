@@ -8,9 +8,7 @@ import './App.css'
 function App() {
   return (
     <>
-      <Header />
       <Container />
-      <Clock />
     </>
   )
 }
@@ -36,9 +34,12 @@ function Container() {
     }, 10000)
   }, [])
   return (
-    <Greeting
-      name={name}
-    />
+    <>
+    <Header />
+    <Greeting name={name} />
+    <Clock/>
+    </>
+
   )
 }
 
